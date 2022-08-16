@@ -1,83 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | [Social Media Dashboard with Theme Switcher Master]</title>
 
 </head>
+
 <body>
+  <header>
+    <div class="main-header">
+      <h1 class="dashboard-title">Social Media Dashboard</h1>
+      <h2>Total Followers: 23,004</h2>
+    </div>
+    <hr>
+    <div class="theme">
+      <h2>Dark Mode</h2>
+      <label for="theme-selector" class="switch">
+        <input type="checkbox" id="theme-selector" onclick="changeTheme()">
+        <span class="slider-round"></span>
+      </label>
+    </div>
+  </header>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <main>
+    
+    <div class="main-cards">
+      <div class="card primary">
+        <div class="socials">
+          <img src="./images/icon-facebook.svg" alt="Facebook icon">
+          <span class="tagname">@nathanf</span>
+        </div>
+        <div class="number-of-followers">1987</div>
+        <div class="followers-text">FOLLOWERS</div>
+        <div class="followers-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="todays-change up-change">12 Today</div>
+        </div>
+      </div>
+      <div class="card primary">
+        <div class="socials">
+          <img src="./images/icon-twitter.svg" alt="Twitter icon">
+          <span class="tagname">@nathanf</span>
+        </div>
+        <div class="number-of-followers">1044</div>
+        <div class="followers-text">FOLLOWERS</div>
+        <div class="followers-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="todays-change up-change">99 Today</div>
+        </div>
+      </div>
+      <div class="card primary">
+        <div class="socials">
+          <img src="./images/icon-instagram.svg" alt="Instagram icon">
+          <span class="tagname">@realnathanf</span>
+        </div>
+        <div class="number-of-followers">11k</div>
+        <div class="followers-text">FOLLOWERS</div>
+        <div class="followers-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="todays-change up-change">1099 Today</div>
+        </div>
+      </div>
+      <div class="card primary">
+        <div class="socials">
+          <img src="./images/icon-youtube.svg" alt="Youtube icon">
+          <span class="tagname">Nathan F.</span>
+        </div>
+        <div class="number-of-followers">8239</div>
+        <div class="followers-text">FOLLOWERS</div>
+        <div class="followers-change">
+          <img src="./images/icon-down.svg" alt="Down icon">
+          <div class="todays-change down-change">144 Today</div>
+        </div>
+      </div>
+    </div>
 
-  Dark Mode
+    <div class="overview-today">
+      <h1 class="overview-title">Overview - Today</h1>
+      <div class="card secondary">
+        <div class="account-action">Page Views</div>
+        <img src="./images/icon-facebook.svg" alt="Facebook icon">
+        <div class="account-action-number">87</div>
+        <div class="account-action-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="percent-change up-change">3%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Likes</div>
+        <img src="./images/icon-facebook.svg" alt="Facebook icon">
+        <div class="account-action-number">52</div>
+        <div class="account-action-change">
+          <img src="./images/icon-down.svg" alt="Down icon">
+          <div class="percent-change down-change">2%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Likes</div>
+        <img src="./images/icon-instagram.svg" alt="Instagram icon">
+        <div class="account-action-number">5462</div>
+        <div class="account-action-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="percent-change up-change">2257%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Profile Views</div>
+        <img src="./images/icon-instagram.svg" alt="Instagram icon">
+        <div class="account-action-number">52k</div>
+        <div class="account-action-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="percent-change up-change">1375%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Retweets</div>
+        <img src="./images/icon-twitter.svg" alt="Twitter icon">
+        <div class="account-action-number">117</div>
+        <div class="account-action-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="percent-change up-change">303%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Likes</div>
+        <img src="./images/icon-twitter.svg" alt="Twitter icon">
+        <div class="account-action-number">507</div>
+        <div class="account-action-change">
+          <img src="./images/icon-up.svg" alt="Up icon">
+          <div class="percent-change up-change">553%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Likes</div>
+        <img src="./images/icon-youtube.svg" alt="Youtube icon">
+        <div class="account-action-number">107</div>
+        <div class="account-action-change">
+          <img src="./images/icon-down.svg" alt="Down icon">
+          <div class="percent-change down-change">19%</div>
+        </div>
+      </div>
+      <div class="card secondary">
+        <div class="account-action">Total Views</div>
+        <img src="./images/icon-youtube.svg" alt="Youtube icon">
+        <div class="account-action-number">1407</div>
+        <div class="account-action-change">
+          <img src="./images/icon-down.svg" alt="Down icon">
+          <div class="percent-change down-change">12%</div>
+        </div>
+      </div>
+      
+    </div>
 
-  
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Woodrow Martyr</a>.
+  </footer>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
