@@ -1,3 +1,7 @@
+* {
+  /* outline: dotted 1px gray; */
+}
+
 :root {
   --color-primary-lime-green: hsl(163, 72%, 41%);
   --color-primary-bright-red: hsl(356, 69%, 56%);
@@ -7,17 +11,43 @@
   --color-accent-instagram2: hsl(329, 70%, 58%);
   --color-accent-youtube: hsl(348, 97%, 39%);
   --color-accent-dark-toggle1: hsl(210, 78%, 56%);
-  --color-accent-dark-toggle2:hsl(146, 68%, 55%);
+  --color-accent-dark-toggle2: hsl(146, 68%, 55%);
   --color-accent-light-toggle: hsl(230, 22%, 74%);
-  --color-theme-dark-blue1: hsl(230, 17%, 14%);
-  --color-theme-dark-blue2: hsl(232, 19%, 15%);  
-  --color-theme-dark-blue3: hsl(228, 28%, 20%);
-  --color-theme-dark-blue4: hsl(228, 34%, 66%);
-  --color-theme-light-blue1: hsl(225, 100%, 98%);
-  --color-theme-light-blue2: hsl(227, 47%, 96%);
-  --color-theme-light-blue3: hsl(228, 12%, 44%);
-  --color-theme-light-blue4: hsl(230, 17%, 14%);
+  --color-dark-theme-blue1: hsl(230, 17%, 14%);
+  --color-dark-theme-blue2: hsl(232, 19%, 15%);
+  --color-dark-theme-blue3: hsl(228, 28%, 20%);
+  --color-dark-theme-blue4: hsl(228, 34%, 66%);
+  --color-light-theme-blue1: hsl(225, 100%, 98%);
+  --color-light-theme-blue2: hsl(227, 47%, 96%);
+  --color-light-theme-blue3: hsl(228, 12%, 44%);
+  --color-light-theme-blue4: hsl(230, 17%, 14%);
 }
+
+body {
+  padding: 1.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-light-theme-blue4);
+}
+
+h2 {
+  font-weight: 700;
+  color: var(--color-light-theme-blue3);
+  font-size: 0.875rem;
+}
+
+
+
 
 .attribution {
   font-size: 11px;
