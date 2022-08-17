@@ -15,20 +15,22 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="dashboard-title all-columns">Social Media Dashboard</h1>
-    <h2 class="all-columns border-bottom-line">Total Followers: 23,004</h2>
-    <h2 class="switch-text">Dark Mode</h2>
-    <label for="theme-selector" class="switch">
-      <input type="checkbox" id="theme-selector" onclick="changeTheme()">
-      <span class="slider-round"></span>
-    </label>
-  </header>
+  <div class="background">
+    <header>
+      <h1 class="dashboard-title all-columns">Social Media Dashboard</h1>
+      <h2 class="all-columns border-bottom-line">Total Followers: 23,004</h2>
+      <h2 class="switch-text">Dark Mode</h2>
+      <label for="theme-selector" class="switch">
+        <input type="checkbox" id="theme-selector" onclick="changeTheme()">
+        <span class="slider-round"></span>
+      </label>
+    </header>
+  </div>
 
   <main>
 
     <div class="main-cards">
-      <div class="card primary">
+      <div class="card-primary facebook-top-edge">
         <div class="socials">
           <img src="./images/icon-facebook.svg" alt="Facebook icon">
           <span class="tagname">@nathanf</span>
@@ -37,10 +39,10 @@
         <div class="followers-text">FOLLOWERS</div>
         <div class="followers-change">
           <img src="./images/icon-up.svg" alt="Up icon">
-          <div class="todays-change up-change">12 Today</div>
+          <div class="up-change">12 Today</div>
         </div>
       </div>
-      <div class="card primary">
+      <div class="card-primary twitter-top-edge">
         <div class="socials">
           <img src="./images/icon-twitter.svg" alt="Twitter icon">
           <span class="tagname">@nathanf</span>
@@ -49,10 +51,10 @@
         <div class="followers-text">FOLLOWERS</div>
         <div class="followers-change">
           <img src="./images/icon-up.svg" alt="Up icon">
-          <div class="todays-change up-change">99 Today</div>
+          <div class="up-change">99 Today</div>
         </div>
       </div>
-      <div class="card primary">
+      <div class="card-primary instagram-top-edge">
         <div class="socials">
           <img src="./images/icon-instagram.svg" alt="Instagram icon">
           <span class="tagname">@realnathanf</span>
@@ -61,10 +63,10 @@
         <div class="followers-text">FOLLOWERS</div>
         <div class="followers-change">
           <img src="./images/icon-up.svg" alt="Up icon">
-          <div class="todays-change up-change">1099 Today</div>
+          <div class="up-change">1099 Today</div>
         </div>
       </div>
-      <div class="card primary">
+      <div class="card-primary youtube-top-edge">
         <div class="socials">
           <img src="./images/icon-youtube.svg" alt="Youtube icon">
           <span class="tagname">Nathan F.</span>
@@ -73,14 +75,14 @@
         <div class="followers-text">FOLLOWERS</div>
         <div class="followers-change">
           <img src="./images/icon-down.svg" alt="Down icon">
-          <div class="todays-change down-change">144 Today</div>
+          <div class="down-change">144 Today</div>
         </div>
       </div>
     </div>
 
     <div class="overview-today">
       <h1 class="overview-title">Overview - Today</h1>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Page Views</div>
         <img src="./images/icon-facebook.svg" alt="Facebook icon">
         <div class="account-action-number">87</div>
@@ -89,7 +91,7 @@
           <div class="percent-change up-change">3%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Likes</div>
         <img src="./images/icon-facebook.svg" alt="Facebook icon">
         <div class="account-action-number">52</div>
@@ -98,7 +100,7 @@
           <div class="percent-change down-change">2%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Likes</div>
         <img src="./images/icon-instagram.svg" alt="Instagram icon">
         <div class="account-action-number">5462</div>
@@ -107,7 +109,7 @@
           <div class="percent-change up-change">2257%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Profile Views</div>
         <img src="./images/icon-instagram.svg" alt="Instagram icon">
         <div class="account-action-number">52k</div>
@@ -116,7 +118,7 @@
           <div class="percent-change up-change">1375%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Retweets</div>
         <img src="./images/icon-twitter.svg" alt="Twitter icon">
         <div class="account-action-number">117</div>
@@ -125,7 +127,7 @@
           <div class="percent-change up-change">303%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Likes</div>
         <img src="./images/icon-twitter.svg" alt="Twitter icon">
         <div class="account-action-number">507</div>
@@ -134,7 +136,7 @@
           <div class="percent-change up-change">553%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Likes</div>
         <img src="./images/icon-youtube.svg" alt="Youtube icon">
         <div class="account-action-number">107</div>
@@ -143,7 +145,7 @@
           <div class="percent-change down-change">19%</div>
         </div>
       </div>
-      <div class="card secondary">
+      <div class="card-secondary">
         <div class="account-action">Total Views</div>
         <img src="./images/icon-youtube.svg" alt="Youtube icon">
         <div class="account-action-number">1407</div>
