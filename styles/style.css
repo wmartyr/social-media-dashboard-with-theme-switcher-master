@@ -46,9 +46,11 @@ header {
   grid-template-rows: 1fr 45px 1fr;
 }
 
-.dashboard-title {
+h1 {
   font-size: 1.5rem;
   font-weight: 700;
+}
+.dashboard-title {
   color: var(--color-light-theme-blue4);
 }
 
@@ -143,6 +145,7 @@ main {
   align-items: center;
   background-color: var(--color-light-theme-blue2);
   padding: 10px;
+  border-radius: 0 0 3px 3px;
 }
 
 .socials {
@@ -169,7 +172,7 @@ main {
   color: var(--color-light-theme-blue3);
 }
 
-.followers-change {
+.change {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -204,7 +207,49 @@ main {
   background-color: var(--color-accent-youtube);
 }
 
+.overview-today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+  margin-top: 40px;
+}
 
+.overview-title {
+  color: var(--color-light-theme-blue3);
+}
+
+.card-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 50px;
+  border-radius: 4px;
+  padding-top: 4px;
+  background-color: var(--color-light-theme-blue2);
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.account-action {
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: var(--color-light-theme-blue3);
+}
+
+.secondary-icon {
+  justify-self: end;
+}
+
+.account-action-number {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-light-theme-blue4);
+}
+
+.secondary-change {
+  justify-self: end;
+}
 
 
 
