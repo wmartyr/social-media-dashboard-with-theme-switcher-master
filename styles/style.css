@@ -132,12 +132,16 @@ main {
 }
 
 .card-primary {
+  border-radius: 4px;
+  padding-top: 4px;
+}
+
+.background-cover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--color-light-theme-blue2);
-  border-radius: 5px;
   padding: 10px;
 }
 
@@ -160,7 +164,7 @@ main {
 }
 
 .followers-text {
-  font-size: 0.875rem;
+  font-size: 0.813rem;
   letter-spacing: 0.25rem;
   color: var(--color-light-theme-blue3);
 }
@@ -172,7 +176,7 @@ main {
   align-items: center;
   gap: 5px;
   margin: 20px 0 15px 0;
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   font-weight: 700;
 }
 
@@ -184,22 +188,20 @@ main {
   color: var(--color-primary-bright-red);
 }
 
-.facebook-top-edge {
-  border-top: solid 4px var(--color-accent-facebook);
+.facebook-background {
+  background-color: var(--color-accent-facebook);
 }
 
-.twitter-top-edge {
-  border-top: solid 4px var(--color-accent-twitter);
+.twitter-background {
+  background-color: var(--color-accent-twitter);
 }
 
-.instagram-top-edge {
-  border-top-color: linear-gradient(to right, var(--color-accent-instagram1), var(--color-accent-instagram2));
-  border-top-style: solid; 
-  border-top-width: 4px;
+.instagram-background {
+  background-image: linear-gradient(to right, var(--color-accent-instagram1), var(--color-accent-instagram2));
 }
 
-.youtube-top-edge {
-  border-top: solid 4px var(--color-accent-youtube);
+.youtube-background {
+  background-color: var(--color-accent-youtube);
 }
 
 
