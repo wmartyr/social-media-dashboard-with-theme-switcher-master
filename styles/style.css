@@ -41,11 +41,11 @@ body {
 }
 
 .body-background-light {
-  background-color: var(--color-light-theme-blue1) ;
+  background-color: var(--color-light-theme-blue1);
 }
 
 .body-background-dark {
-  background-color: var(--color-dark-theme-blue2) ;
+  background-color: var(--color-dark-theme-blue2);
 }
 
 header {
@@ -58,6 +58,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .dashboard-title-light {
   color: var(--color-light-theme-blue4);
 }
@@ -76,8 +77,15 @@ h1 {
 
 h2 {
   font-weight: 700;
-  color: var(--color-light-theme-blue3);
   font-size: 0.875rem;
+}
+
+.h2-light {
+  color: var(--color-light-theme-blue3);
+}
+
+.h2-dark {
+  color: var(--color-dark-theme-blue4);
 }
 
 .switch-text {
@@ -106,10 +114,17 @@ h2 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--color-accent-light-toggle);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 22px;
+}
+
+.slider-round-light {
+  background-color: var(--color-accent-light-toggle);
+}
+
+.slider-round-dark {
+  background-image: linear-gradient(to right, var(--color-accent-dark-toggle1), var(--color-accent-dark-toggle2));
 }
 
 .slider-round::before {
@@ -119,10 +134,17 @@ h2 {
   width: 16px;
   right: 3px;
   bottom: 3px;
-  background-color: var(--color-light-theme-blue1);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
+}
+
+.slider-round-light::before {
+  background-color: var(--color-light-theme-blue1);
+}
+
+.slider-round-dark::before {
+  background-color: var(--color-dark-theme-blue2);
 }
 
 input:checked+.slider-round::before {
@@ -155,9 +177,16 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--color-light-theme-blue2);
   padding: 10px;
   border-radius: 0 0 3px 3px;
+}
+
+.background-cover-light {
+  background-color: var(--color-light-theme-blue2);
+}
+
+.background-cover-dark {
+  background-color: var(--color-dark-theme-blue3);
 }
 
 .socials {
@@ -168,8 +197,15 @@ main {
   gap: 8px;
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--color-light-theme-blue3);
   margin: 10px 0;
+}
+
+.socials-light {
+  color: var(--color-light-theme-blue3);
+}
+
+.socials-dark {
+  color: var(--color-dark-theme-blue4);
 }
 
 .number-of-followers {
@@ -181,7 +217,14 @@ main {
 .followers-text {
   font-size: 0.813rem;
   letter-spacing: 0.25rem;
+}
+
+.followers-text-light {
   color: var(--color-light-theme-blue3);
+}
+
+.followers-text-dark {
+  color: var(--color-dark-theme-blue4);
 }
 
 .change {
@@ -228,8 +271,12 @@ main {
   margin-top: 40px;
 }
 
-.overview-title {
+.overview-title-light {
   color: var(--color-light-theme-blue3);
+}
+
+.overview-title-dark {
+  color: var(--color-dark-theme-blue4);
 }
 
 .card-secondary {
@@ -238,15 +285,29 @@ main {
   grid-template-rows: 40px 50px;
   border-radius: 4px;
   padding-top: 4px;
-  background-color: var(--color-light-theme-blue2);
   align-items: center;
   padding: 10px 25px;
+}
+
+.card-secondary-light {
+  background-color: var(--color-light-theme-blue2);
+}
+
+.card-secondary-dark {
+  background-color: var(--color-dark-theme-blue3);
 }
 
 .account-action {
   font-size: 0.813rem;
   font-weight: 700;
+}
+
+.account-action-light {
   color: var(--color-light-theme-blue3);
+}
+
+.account-action-dark {
+  color: var(--color-dark-theme-blue4);
 }
 
 .secondary-icon {
@@ -256,7 +317,14 @@ main {
 .account-action-number {
   font-size: 1.75rem;
   font-weight: 700;
+}
+
+.account-action-number-light {
   color: var(--color-light-theme-blue4);
+}
+
+.account-action-number-dark {
+  color: white;
 }
 
 .secondary-change {
@@ -267,6 +335,14 @@ footer {
   font-size: 11px;
   text-align: center;
   margin-top: 10px;
+}
+
+.attribution-light {
+color: var(--color-light-theme-blue3);
+}
+
+.attribution-dark {
+color: var(--color-dark-theme-blue4);
 }
 
 .footer a {
