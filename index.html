@@ -10,16 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/script.js" defer></script>
   <title>Frontend Mentor | [Social Media Dashboard with Theme Switcher Master]</title>
 
 </head>
 
 <body>
-  <div class="body-background body-background-light">
+  <div class="body-background">
     <header>
-      <h1 class="dashboard-title-light all-columns">Social Media Dashboard</h1>
-      <h2 class="all-columns border-bottom-line h2-light">Total Followers: 23,004</h2>
-      <h2 class="switch-text h2-light">Dark Mode</h2>
+      <h1 class="dashboard-title all-columns">Social Media Dashboard</h1>
+      <h2 class="all-columns border-bottom-line">Total Followers: 23,004</h2>
+      <h2 class="switch-text">Dark Mode</h2>
       <label for="theme-selector" class="switch">
         <input type="checkbox" id="theme-selector" onclick="changeTheme()">
         <span class="slider-round slider-round-light"></span>
@@ -59,7 +60,7 @@
         </div>
       </div>
       <div class="card-primary instagram-background">
-        <div class="background-cover background-cover-light">
+        <div class="background-cover">
           <div class="socials socials-light">
             <img src="./images/icon-instagram.svg" alt="Instagram icon">
             <span class="tagname">@realnathanf</span>
@@ -164,7 +165,7 @@
       </div>
 
     </div>
-    <footer class="attribution">
+    <footer class="attribution-light">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Woodrow Martyr</a>.
     </footer>
