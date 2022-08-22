@@ -26,6 +26,7 @@
   --color-theme-card-background: var(--color-light-theme-blue2);
   --color-theme-text1: var(--color-light-theme-blue3);
   --color-theme-text2: var(--color-light-theme-blue4);
+  --color-card-hover: hsl(232, 33%, 91%);
 
 }
 
@@ -107,6 +108,10 @@ h2 {
   border-radius: 22px;
 }
 
+.slider-round:hover {
+  background-image: linear-gradient(to right, var(--color-accent-dark-toggle1), var(--color-accent-dark-toggle2));
+}
+
 .slider-round-light {
   background-color: var(--color-accent-light-toggle);
 }
@@ -161,6 +166,11 @@ main {
   padding: 10px;
   border-radius: 0 0 3px 3px;
   background-color: var(--color-theme-card-background);
+  cursor: pointer;
+}
+
+.background-cover:hover {
+  background-color: var(--color-card-hover);
 }
 
 .socials {
@@ -257,6 +267,11 @@ main {
   align-items: center;
   padding: 10px 25px;
   background-color: var(--color-theme-card-background);
+  cursor: pointer;
+}
+
+.card-secondary:hover {
+  background-color: var(--color-card-hover);
 }
 
 .account-action {
@@ -282,7 +297,8 @@ main {
 footer {
   font-size: 11px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  width: 100%;
   color: var(--color-theme-text1);
 }
 
@@ -350,18 +366,6 @@ footer a {
     flex: 1;
   }
 
-  /* .overview-today {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 1fr 1fr;
-    grid-auto-flow: column;
-    gap: 20px;
-    width: 100%;
-  } */
-
-  /* .overview-today h1 {
-  } */
-
   .overview-cards {
     display: flex;
     flex-direction: row;
@@ -374,7 +378,6 @@ footer a {
 
   .card-secondary {
     min-width: 327px;
-    /* max-width: 327px; */
     flex: 1;
   }
 
