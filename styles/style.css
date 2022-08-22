@@ -126,14 +126,7 @@ h2 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
-}
-
-.slider-round-light::before {
-  background-color: var(--color-light-theme-blue1);
-}
-
-.slider-round-dark::before {
-  background-color: var(--color-dark-theme-blue2);
+  background-color: var(--color-theme-top-background);
 }
 
 input:checked+.slider-round::before {
@@ -171,14 +164,6 @@ main {
   background-color: var(--color-theme-card-background);
 }
 
-/* .background-cover-light {
-  background-color: var(--color-light-theme-blue2);
-}
-
-.background-cover-dark {
-  background-color: var(--color-dark-theme-blue3);
-} */
-
 .socials {
   display: flex;
   flex-direction: row;
@@ -188,33 +173,20 @@ main {
   font-size: 0.75rem;
   font-weight: 700;
   margin: 10px 0;
-}
-
-.socials-light {
-  color: var(--color-light-theme-blue3);
-}
-
-.socials-dark {
-  color: var(--color-dark-theme-blue4);
+  color: var(--color-theme-text1);
 }
 
 .number-of-followers {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: -10px;
+  color: var(--color-theme-text2);
 }
 
 .followers-text {
   font-size: 0.813rem;
   letter-spacing: 0.25rem;
-}
-
-.followers-text-light {
-  color: var(--color-light-theme-blue3);
-}
-
-.followers-text-dark {
-  color: var(--color-dark-theme-blue4);
+  color: var(--color-theme-text1);
 }
 
 .change {
@@ -266,7 +238,7 @@ main {
 }
 
 .overview-title-dark {
-  color: var(--color-dark-theme-blue4);
+  color: white;
 }
 
 .card-secondary {
@@ -277,27 +249,13 @@ main {
   padding-top: 4px;
   align-items: center;
   padding: 10px 25px;
-}
-
-.card-secondary-light {
-  background-color: var(--color-light-theme-blue2);
-}
-
-.card-secondary-dark {
-  background-color: var(--color-dark-theme-blue3);
+  background-color: var(--color-theme-card-background);
 }
 
 .account-action {
   font-size: 0.813rem;
   font-weight: 700;
-}
-
-.account-action-light {
-  color: var(--color-light-theme-blue3);
-}
-
-.account-action-dark {
-  color: var(--color-dark-theme-blue4);
+  color: var(--color-theme-text1);
 }
 
 .secondary-icon {
@@ -307,14 +265,7 @@ main {
 .account-action-number {
   font-size: 1.75rem;
   font-weight: 700;
-}
-
-.account-action-number-light {
-  color: var(--color-light-theme-blue4);
-}
-
-.account-action-number-dark {
-  color: white;
+  color: var(--color-theme-text2);
 }
 
 .secondary-change {
@@ -325,16 +276,9 @@ footer {
   font-size: 11px;
   text-align: center;
   margin-top: 10px;
+  color: var(--color-theme-text1);
 }
 
-.attribution-light {
-  color: var(--color-light-theme-blue3);
-}
-
-.attribution-dark {
-  color: var(--color-dark-theme-blue4);
-}
-
-.footer a {
+footer a {
   color: hsl(228, 45%, 44%);
 }

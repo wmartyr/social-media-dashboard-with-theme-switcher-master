@@ -1,26 +1,24 @@
 const checkbox = document.querySelector("#theme-selector");
 const root = document.querySelector(":root");
-const body = document.querySelector("body");
-const bodyBackground = document.querySelector(".body-background");
-const headerTitle = document.querySelector("header>h1");
-const h2 = document.querySelector("h2");
 const sliderRound = document.querySelector(".slider-round");
-const backgroundCover = document.querySelector(".background-cover");
-const socials = document.querySelector(".socials");
-const followersText = document.querySelector(".followers-text");
 const overviewTitle = document.querySelector("div>h1");
-const cardSecondary = document.querySelector(".card-secondary");
-const accountAction = document.querySelector(".account-action");
-const accountActionNumber = document.querySelector(".account-action-number");
-const footer = document.querySelector("footer");
 
 function changeTheme() {
   if (checkbox.checked) {
+    root.style.setProperty("--color-theme-background", "var(--color-dark-theme-blue1)");
+    root.style.setProperty("--color-theme-top-background", "var(--color-dark-theme-blue2)");
     root.style.setProperty("--color-theme-card-background", "var(--color-dark-theme-blue3)");
-
-
+    root.style.setProperty("--color-theme-text1", "var(--color-dark-theme-blue4)");
+    root.style.setProperty("--color-theme-text2", "white");
+    sliderRound.classList.replace("slider-round-light", "slider-round-dark");
+    overviewTitle.classList.replace("overview-title-light", "overview-title-dark");
   } else {
+    root.style.setProperty("--color-theme-background", "white");
+    root.style.setProperty("--color-theme-top-background", "var(--color-light-theme-blue1)");
     root.style.setProperty("--color-theme-card-background", "var(--color-light-theme-blue2)");
-
+    root.style.setProperty("--color-theme-text1", "var(--color-light-theme-blue3)");
+    root.style.setProperty("--color-theme-text2", "var(--color-light-theme-blue4)");
+    sliderRound.classList.replace("slider-round-dark", "slider-round-light");
+    overviewTitle.classList.replace("overview-title-dark", "overview-title-light");
   }
 }
