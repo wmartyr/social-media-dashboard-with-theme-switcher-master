@@ -26,8 +26,9 @@
   --color-theme-card-background: var(--color-light-theme-blue2);
   --color-theme-text1: var(--color-light-theme-blue3);
   --color-theme-text2: var(--color-light-theme-blue4);
-  --color-card-hover: hsl(232, 33%, 91%);
-
+  --color-card-hover-light: hsl(232, 33%, 91%);
+  --color-card-hover-dark: hsl(228, 25%, 27%);
+  --color-card-hover: var(--color-card-hover-light);
 }
 
 body {
