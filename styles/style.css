@@ -240,6 +240,14 @@ main {
   color: white;
 }
 
+.overview-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+}
+
 .card-secondary {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -285,13 +293,13 @@ footer a {
 @media only screen and (min-width: 376px) {
 
   body {
-    padding: 1.5rem 7.5rem;
+    padding: 1.5rem 8rem;
     min-width: 600px;
   }
 
   .body-background {
     height: 250px;
-    padding: 1.5rem 7.5rem;
+    padding: 1.5rem 8rem;
   }
 
   header {
@@ -325,7 +333,7 @@ footer a {
 
   main {
     top: 130px;
-    width: calc(100% - 15rem);
+    width: calc(100% - 16rem);
   }
 
   .main-cards {
@@ -339,6 +347,34 @@ footer a {
 
   .card-primary {
     min-width: 200px;
+    flex: 1;
+  }
+
+  /* .overview-today {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 20px;
+    width: 100%;
+  } */
+
+  /* .overview-today h1 {
+  } */
+
+  .overview-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .card-secondary {
+    min-width: 327px;
+    /* max-width: 327px; */
     flex: 1;
   }
 
